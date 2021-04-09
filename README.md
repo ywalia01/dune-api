@@ -14,7 +14,7 @@ A simple API to retrieve some quotes from Dune.
 
 Get a random quote in this format:
 
-> [https://dune-quote-api.herokuapp.com//quotes](https://dune-quote-api.herokuapp.com//quotes)
+> [https://dune-quote-api.herokuapp.com/quotes](https://dune-quote-api.herokuapp.com//quotes)
 
     [
     	{
@@ -26,7 +26,7 @@ Get a random quote in this format:
 
 Returns an array with `{number}` quotes e.g. `GET /quotes/5`.
 
-> [https://dune-quote-api.herokuapp.com//quotes/5](https://dune-quote-api.herokuapp.com//quotes/5)
+> [https://dune-quote-api.herokuapp.com/quotes/5](https://dune-quote-api.herokuapp.com//quotes/5)
 
     [
       {
