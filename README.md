@@ -4,12 +4,6 @@ A simple API to retrieve some quotes from Dune.
 
 ![](arrakis-header.jpeg)
 
-# Breaking Bad quotes API
-
-A simple API to retrieve some quotes from Dune.
-
-<!-- :globe_with_meridians: Website and demo: https://breakingbadquotes.xyz/ -->
-
 ## Production host
 
 [https://dune-quote-api.herokuapp.com/](https://dune-quote-api.herokuapp.com/)
