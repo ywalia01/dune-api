@@ -1,0 +1,26 @@
+{
+  "name": "dune-api",
+  "version": "1.0.0",
+  "description": "An API for getting Dune Quotes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ywalia01"
+  },
+  "keywords": [
+    "dune",
+    "quotes",
+    "api"
+  ],
+  "author": "ywalia01",
+  "bugs": {
+    "url": "https://github.com/ywalia01"
+  },
+  "homepage": "https://github.com/ywalia01",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
