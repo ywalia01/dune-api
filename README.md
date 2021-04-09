@@ -48,7 +48,7 @@ Returns an array with `{number}` quotes e.g. `GET /quotes/5`.
 
 ## Contributing
 
-If you want to add some quotes, just add them in `quotes.js` file and do a pull request !
+If you want to add some quotes, just add them in the `models/quotes.js` file and make a pull request.
 
 ## Credits
 
