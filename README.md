@@ -1,4 +1,4 @@
-# Dune Quotes API
+# Dune API
 
 A simple API which provides you with book, character, movie and quotes JSON data
 
