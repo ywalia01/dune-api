@@ -6,7 +6,7 @@ A simple API which provides you with book, character, movie and quotes JSON data
 
 ## Production host
 
-[https://dune-quote-api.herokuapp.com/](https://dune-quote-api.herokuapp.com/)
+[https://the-dune-api.herokuapp.com//](https://the-dune-api.herokuapp.com//)
 
 ## API
 
@@ -14,20 +14,20 @@ A simple API which provides you with book, character, movie and quotes JSON data
 
 Get a random quote in this format:
 
-> [https://dune-quote-api.herokuapp.com/quotes](https://dune-quote-api.herokuapp.com/quotes)
+> [https://the-dune-api.herokuapp.com//quotes](https://the-dune-api.herokuapp.com//quotes)
 
-    [
-    	{
-            id: "14",
-    		quote: "Fear is the mind-killer."
-    	}
-    ]
+[
+    {
+        id: "14",
+        quote: "Fear is the mind-killer."
+    }
+]
 
 ### `GET /quotes/{number}`
 
 Returns an array with `{number}` quotes e.g. `GET /quotes/3`.
 
-> [https://dune-quote-api.herokuapp.com/quotes/3](https://dune-quote-api.herokuapp.com/quotes/3)
+> [https://the-dune-api.herokuapp.com//quotes/3](https://the-dune-api.herokuapp.com//quotes/3)
 
     [
         {
@@ -48,7 +48,7 @@ Returns an array with `{number}` quotes e.g. `GET /quotes/3`.
 
 Get the corresponding quote from its `id` in this format:
 
-> [https://dune-quote-api.herokuapp.com/quote/40](https://dune-quote-api.herokuapp.com/quote/40)
+> [https://the-dune-api.herokuapp.com//quote/40](https://the-dune-api.herokuapp.com//quote/40)
 
     [
         {
@@ -61,7 +61,7 @@ Get the corresponding quote from its `id` in this format:
 
 Get a random book in this format:
 
-> [https://dune-quote-api.herokuapp.com/books](https://dune-quote-api.herokuapp.com/books)
+> [https://the-dune-api.herokuapp.com//books](https://the-dune-api.herokuapp.com//books)
 
     [
         {
@@ -77,7 +77,7 @@ Get a random book in this format:
 
 Returns an array with `{number}` books e.g. `GET /books/3`.
 
-> [https://dune-quote-api.herokuapp.com/books/3](https://dune-quote-api.herokuapp.com/books/3)
+> [https://the-dune-api.herokuapp.com//books/3](https://the-dune-api.herokuapp.com//books/3)
 
     [
         {
@@ -107,7 +107,7 @@ Returns an array with `{number}` books e.g. `GET /books/3`.
 
 Get the corresponding book from its `id` in this format:
 
-> [https://dune-quote-api.herokuapp.com/book/1](https://dune-quote-api.herokuapp.com/book/1)
+> [https://the-dune-api.herokuapp.com//book/1](https://the-dune-api.herokuapp.com//book/1)
 
     [
         {
