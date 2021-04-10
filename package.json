@@ -1,21 +1,22 @@
 {
   "name": "dune-api",
   "version": "1.0.0",
-  "description": "An API for getting Dune Quotes",
+  "description": "An API for getting Dune Info",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ywalia01"
+    "url": "https://github.com/ywalia01/dune-api"
   },
   "keywords": [
     "dune",
     "quotes",
-    "api"
+    "api",
+    "quotes-api"
   ],
   "author": "ywalia01",
   "bugs": {
-    "url": "https://github.com/ywalia01"
+    "url": "https://github.com/ywalia01/dune-api/issues"
   },
-  "homepage": "https://github.com/ywalia01",
+  "homepage": "https://github.com/ywalia01/dune-api",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
