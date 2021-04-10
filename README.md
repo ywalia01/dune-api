@@ -6,7 +6,7 @@ A simple API which provides you with book, character, movie and quotes JSON data
 
 ## Production host
 
-[https://the-dune-api.herokuapp.com//](https://the-dune-api.herokuapp.com//)
+[https:/the-dune-api.herokuapp.com/](https:/the-dune-api.herokuapp.com/)
 
 ## API
 
@@ -14,7 +14,7 @@ A simple API which provides you with book, character, movie and quotes JSON data
 
 Get a random quote in this format:
 
-> [https://the-dune-api.herokuapp.com//quotes](https://the-dune-api.herokuapp.com//quotes)
+> [https:/the-dune-api.herokuapp.com/quotes](https:/the-dune-api.herokuapp.com/quotes)
 
     [
         {
@@ -27,7 +27,7 @@ Get a random quote in this format:
 
 Returns an array with `{number}` quotes e.g. `GET /quotes/3`.
 
-> [https://the-dune-api.herokuapp.com//quotes/3](https://the-dune-api.herokuapp.com//quotes/3)
+> [https:/the-dune-api.herokuapp.com/quotes/3](https:/the-dune-api.herokuapp.com/quotes/3)
 
     [
         {
@@ -48,7 +48,7 @@ Returns an array with `{number}` quotes e.g. `GET /quotes/3`.
 
 Get the corresponding quote from its `id` in this format:
 
-> [https://the-dune-api.herokuapp.com//quote/40](https://the-dune-api.herokuapp.com//quote/40)
+> [https:/the-dune-api.herokuapp.com/quote/40](https:/the-dune-api.herokuapp.com/quote/40)
 
     [
         {
@@ -61,7 +61,7 @@ Get the corresponding quote from its `id` in this format:
 
 Get a random book in this format:
 
-> [https://the-dune-api.herokuapp.com//books](https://the-dune-api.herokuapp.com//books)
+> [https:/the-dune-api.herokuapp.com/books](https:/the-dune-api.herokuapp.com/books)
 
     [
         {
@@ -69,7 +69,7 @@ Get a random book in this format:
             title: "Sisterhood of Dune",
             year: "2012",
             author: ["Brian Herbert", "Kevin J. Anderson"],
-            wiki_url: "https://en.wikipedia.org/wiki/Sisterhood_of_Dune"
+            wiki_url: "https:/en.wikipedia.org/wiki/Sisterhood_of_Dune"
         }
     ]
 
@@ -77,7 +77,7 @@ Get a random book in this format:
 
 Returns an array with `{number}` books e.g. `GET /books/3`.
 
-> [https://the-dune-api.herokuapp.com//books/3](https://the-dune-api.herokuapp.com//books/3)
+> [https:/the-dune-api.herokuapp.com/books/3](https:/the-dune-api.herokuapp.com/books/3)
 
     [
         {
@@ -85,21 +85,21 @@ Returns an array with `{number}` books e.g. `GET /books/3`.
             title: "Dune: The Duke of Caladan",
             year: "2020",
             author: ["Brian Herbert", "Kevin J. Anderson"],
-            wiki_url: "https://en.wikipedia.org/wiki/Dune:_The_Duke_of_Caladan"
+            wiki_url: "https:/en.wikipedia.org/wiki/Dune:_The_Duke_of_Caladan"
         },
         {
             id: "15",
             title: "Paul of Dune",
             year: "2008",
             author: ["Brian Herbert", "Kevin J. Anderson"],
-            wiki_url: "https://en.wikipedia.org/wiki/Paul_of_Dune"
+            wiki_url: "https:/en.wikipedia.org/wiki/Paul_of_Dune"
         },
         {
             id: "4",
             title: "God Emperor of Dune",
             year: "1981",
             author: "Frank Herbert",
-            wiki_url: "https://en.wikipedia.org/wiki/God_Emperor_of_Dune"
+            wiki_url: "https:/en.wikipedia.org/wiki/God_Emperor_of_Dune"
         }
     ]
 
@@ -107,7 +107,7 @@ Returns an array with `{number}` books e.g. `GET /books/3`.
 
 Get the corresponding book from its `id` in this format:
 
-> [https://the-dune-api.herokuapp.com//book/1](https://the-dune-api.herokuapp.com//book/1)
+> [https:/the-dune-api.herokuapp.com/book/1](https:/the-dune-api.herokuapp.com/book/1)
 
     [
         {
@@ -115,7 +115,7 @@ Get the corresponding book from its `id` in this format:
             title: "Dune",
             year: "1965",
             author: "Frank Herbert",
-            wiki_url: "https://en.wikipedia.org/wiki/Dune_(novel)"
+            wiki_url: "https:/en.wikipedia.org/wiki/Dune_(novel)"
         }
     ]
 
@@ -125,4 +125,4 @@ If you want to add some quotes, just add them in the `models/quotes.js` file and
 
 ## Credits
 
-Inspired by [Breaking Bad Quotes](https://github.com/shevabam/breaking-bad-quotes).
+Inspired by [Breaking Bad Quotes](https:/github.com/shevabam/breaking-bad-quotes).
