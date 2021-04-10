@@ -16,12 +16,12 @@ Get a random quote in this format:
 
 > [https://the-dune-api.herokuapp.com//quotes](https://the-dune-api.herokuapp.com//quotes)
 
-[
-    {
-        id: "14",
-        quote: "Fear is the mind-killer."
-    }
-]
+    [
+        {
+            id: "14",
+            quote: "Fear is the mind-killer."
+        }
+    ]
 
 ### `GET /quotes/{number}`
 
