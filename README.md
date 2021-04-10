@@ -6,7 +6,7 @@ A simple API which provides you with book, character, movie and quotes JSON data
 
 ## Production host
 
-[https:/the-dune-api.herokuapp.com/](https:/the-dune-api.herokuapp.com/)
+[https://the-dune-api.herokuapp.com/](https://the-dune-api.herokuapp.com/)
 
 ## API
 
@@ -14,7 +14,7 @@ A simple API which provides you with book, character, movie and quotes JSON data
 
 Get a random quote in this format:
 
-> [https:/the-dune-api.herokuapp.com/quotes](https:/the-dune-api.herokuapp.com/quotes)
+> [https://the-dune-api.herokuapp.com/quotes](https://the-dune-api.herokuapp.com/quotes)
 
     [
         {
@@ -27,7 +27,7 @@ Get a random quote in this format:
 
 Returns an array with `{number}` quotes e.g. `GET /quotes/3`.
 
-> [https:/the-dune-api.herokuapp.com/quotes/3](https:/the-dune-api.herokuapp.com/quotes/3)
+> [https://the-dune-api.herokuapp.com/quotes/3](https://the-dune-api.herokuapp.com/quotes/3)
 
     [
         {
@@ -48,7 +48,7 @@ Returns an array with `{number}` quotes e.g. `GET /quotes/3`.
 
 Get the corresponding quote from its `id` in this format:
 
-> [https:/the-dune-api.herokuapp.com/quote/40](https:/the-dune-api.herokuapp.com/quote/40)
+> [https://the-dune-api.herokuapp.com/quote/40](https://the-dune-api.herokuapp.com/quote/40)
 
     [
         {
@@ -61,7 +61,7 @@ Get the corresponding quote from its `id` in this format:
 
 Get a random book in this format:
 
-> [https:/the-dune-api.herokuapp.com/books](https:/the-dune-api.herokuapp.com/books)
+> [https://the-dune-api.herokuapp.com/books](https://the-dune-api.herokuapp.com/books)
 
     [
         {
@@ -77,7 +77,7 @@ Get a random book in this format:
 
 Returns an array with `{number}` books e.g. `GET /books/3`.
 
-> [https:/the-dune-api.herokuapp.com/books/3](https:/the-dune-api.herokuapp.com/books/3)
+> [https://the-dune-api.herokuapp.com/books/3](https://the-dune-api.herokuapp.com/books/3)
 
     [
         {
@@ -107,7 +107,7 @@ Returns an array with `{number}` books e.g. `GET /books/3`.
 
 Get the corresponding book from its `id` in this format:
 
-> [https:/the-dune-api.herokuapp.com/book/1](https:/the-dune-api.herokuapp.com/book/1)
+> [https://the-dune-api.herokuapp.com/book/1](https://the-dune-api.herokuapp.com/book/1)
 
     [
         {
@@ -125,4 +125,4 @@ If you want to add some quotes, just add them in the `models/quotes.js` file and
 
 ## Credits
 
-Inspired by [Breaking Bad Quotes](https:/github.com/shevabam/breaking-bad-quotes).
+Inspired by [Breaking Bad Quotes](https://github.com/shevabam/breaking-bad-quotes).
