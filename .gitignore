@@ -1,4 +1,3 @@
-
 # Logs
 logs
 *.log
@@ -34,4 +33,5 @@ jspm_packages
 # Optional npm cache directory
 .npm
 
+.vscode
 .DS_Store
