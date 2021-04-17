@@ -1,8 +1,8 @@
+![arrakis-header2](https://user-images.githubusercontent.com/48391286/115104563-fcbaf400-9f76-11eb-912d-5d2b7a9f4933.jpg)
+
 # Dune API
 
 A simple API which provides you with book, character, movie and quotes JSON data
-
-![arrakis-header2](https://user-images.githubusercontent.com/48391286/115104563-fcbaf400-9f76-11eb-912d-5d2b7a9f4933.jpg)
 
 ## Production host
 
