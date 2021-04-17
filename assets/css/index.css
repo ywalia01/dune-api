@@ -1,0 +1,96 @@
+:root {
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #ffffff;
+    background: #000000;
+    scroll-behavior: smooth;
+}
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 4%;
+    padding-right: 4%;
+    overflow: hidden;
+    background: url(../img/dune_vb.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+.nav-logo {
+    height: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon {
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    color: #d55b15;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    width: 55vw;
+    padding: 15px 15px;
+    background-color: rgb(0, 0, 0, 0.2);
+    margin: 30px auto;
+    border-radius: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #nav-menu {
+        overflow: hidden;
+        transition: 0.4s;
+    }
+    section {
+        width: 80vw;
+    }
+    .about {
+        margin-top: 70px;
+    }
+}
