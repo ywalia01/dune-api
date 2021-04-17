@@ -2,7 +2,7 @@
 
 A simple API which provides you with book, character, movie and quotes JSON data
 
-![](arrakis-header2.jpg)
+![arrakis-header2](https://user-images.githubusercontent.com/48391286/115103855-b95e8680-9f72-11eb-9cd8-5b94b2d09fc7.jpg)
 
 ## Production host
 
