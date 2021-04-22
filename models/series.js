@@ -14,5 +14,12 @@ module.exports = [
         "year": "2003",
         "director": "Greg Yaitanes",
         "wiki_url": "https://en.wikipedia.org/wiki/Frank_Herbert%27s_Children_of_Dune"
+    },
+    {
+        "id" : "3",
+        "title": "Dune: The Sisterhood ",
+        "year": "TBA",
+        "director": "",
+        "wiki_url": ""
     }
 ]
