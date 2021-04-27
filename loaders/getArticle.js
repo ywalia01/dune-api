@@ -1,15 +1,15 @@
 'use strict';
 
-var quotes = require('../models/quotes');
-var books = require('../models/books');
-var movies = require('../models/movies');
-var series = require('../models/series');
-var shortStories = require('../models/shortStories');
-var comics = require('../models/comics');
+var quotes = require('../models/quotes'),
+    books = require('../models/books'),
+    movies = require('../models/movies'),
+    series = require('../models/series'),
+    shortStories = require('../models/shortStories'),
+    comics = require('../models/comics');
 
-module.exports = {
-    getRandom: function getRandom(number, type) {
-        if (type == 'quotes'){
+function getRandom(type, number) {
+    switch (type) {
+        case 'quotes':
             var limit = number > quotes.length ? quotes.length : number;
             var out = new Array(limit);
             var quote;
@@ -21,8 +21,7 @@ module.exports = {
                 out[i] = quote;
             }
             return out;
-        }
-        else if (type == 'books') {
+        case 'books':
             var limit = number > books.length ? books.length : number;
             var out = new Array(limit);
             var book;
@@ -33,8 +32,7 @@ module.exports = {
                 out[i] = book;
             }
             return out;
-        }
-        else if (type == 'movies') {
+        case 'movies':
             var limit = number > movies.length ? movies.length : number;
             var out = new Array(limit);
             var movie;
@@ -45,8 +43,7 @@ module.exports = {
                 out[i] = movie;
             }
             return out;
-        }
-        else if (type == 'series') {
+        case 'series':
             var limit = number > series.length ? series.length : number;
             var out = new Array(limit);
             var serie;
@@ -57,8 +54,7 @@ module.exports = {
                 out[i] = serie;
             }
             return out;
-        }
-        else if (type == 'stories') {
+        case 'stories':
             var limit = number > shortStories.length ? shortStories.length : number;
             var out = new Array(limit);
             var story;
@@ -69,8 +65,7 @@ module.exports = {
                 out[i] = story;
             }
             return out;
-        }
-        else if (type == 'comics') {
+        case 'comics':
             var limit = number > comics.length ? comics.length : number;
             var out = new Array(limit);
             var comic;
@@ -81,74 +76,81 @@ module.exports = {
                 out[i] = comic;
             }
             return out;
+        default:
+            return { "Error": "Bad Request" }
+    }
+}
+    
+function getArticle(type, id) {
+    if (type == 'quotes') {
+        if (id < 0) {
+            return quotes[1]
         }
-    },
-    getArticleFromId: function getArticle(id, type) {
-        if (type == 'quotes') {
-            if (id < 0) {
-                return quotes[1]
-            }
-            else if (id > quotes.length) {
-                return quotes[quotes.length - 1]
-            }
-            else {
-                return quotes[id - 1]
-            }
+        else if (id > quotes.length) {
+            return quotes[quotes.length - 1]
         }
-        else if (type == 'books') {
-            if (id < 0) {
-                return books[1]
-            }
-            else if (id > books.length) {
-                return books[books.length - 1]
-            }
-            else {
-                return books[id - 1]
-            }
-        }
-        else if (type == 'movies') {
-            if (id < 0) {
-                return movies[1]
-            }
-            else if (id > movies.length) {
-                return movies[movies.length - 1]
-            }
-            else {
-                return movies[id - 1]
-            }
-        }
-        else if (type == 'series') {
-            if (id < 0) {
-                return series[1]
-            }
-            else if (id > series.length) {
-                return series[series.length - 1]
-            }
-            else {
-                return series[id - 1]
-            }
-        }
-        else if (type == 'stories') {
-            if (id < 0) {
-                return shortStories[1]
-            }
-            else if (id > stories.length) {
-                return shortStories[shortStories.length - 1]
-            }
-            else {
-                return shortStories[id - 1]
-            }
-        }
-        else if (type == 'comics') {
-            if (id < 0) {
-                return comics[1]
-            }
-            else if (id > comics.length) {
-                return comics[comics.length - 1]
-            }
-            else {
-                return comics[id - 1]
-            }
+        else {
+            return quotes[id - 1]
         }
     }
-};
+    else if (type == 'books') {
+        if (id < 0) {
+            return books[1]
+        }
+        else if (id > books.length) {
+            return books[books.length - 1]
+        }
+        else {
+            return books[id - 1]
+        }
+    }
+    else if (type == 'movies') {
+        if (id < 0) {
+            return movies[1]
+        }
+        else if (id > movies.length) {
+            return movies[movies.length - 1]
+        }
+        else {
+            return movies[id - 1]
+        }
+    }
+    else if (type == 'series') {
+        if (id < 0) {
+            return series[1]
+        }
+        else if (id > series.length) {
+            return series[series.length - 1]
+        }
+        else {
+            return series[id - 1]
+        }
+    }
+    else if (type == 'stories') {
+        if (id < 0) {
+            return shortStories[1]
+        }
+        else if (id > stories.length) {
+            return shortStories[shortStories.length - 1]
+        }
+        else {
+            return shortStories[id - 1]
+        }
+    }
+    else if (type == 'comics') {
+        if (id < 0) {
+            return comics[1]
+        }
+        else if (id > comics.length) {
+            return comics[comics.length - 1]
+        }
+        else {
+            return comics[id - 1]
+        }
+    }
+    else {
+        return { "Error": "Bad Request"}
+    }
+}
+
+module.exports = { getRandom, getArticle };
