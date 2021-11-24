@@ -23,7 +23,7 @@ app.get('/:type/id/:id?', function (req, res) {
 });
 
 app.get('/', (req, res) => {
-    res.status(200).status(200).send("Welcome to the DUNE API")
+    res.status(200).send("Welcome to the DUNE API")
 });
 
 app.listen(PORT, function () {
