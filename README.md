@@ -44,15 +44,15 @@ Returns an array with `{number}` quotes e.g. `GET /quotes/3`.
         }
     ]
 
-### `GET /quote/{id}`
+### `GET /quotes/id/{id}`
 
 Get the corresponding quote from its `id` in this format:
 
-> [https://the-dune-api.herokuapp.com/quote/40](https://the-dune-api.herokuapp.com/quote/40)
+> [https://the-dune-api.herokuapp.com/quotes/id/66](https://the-dune-api.herokuapp.com/quotes/id/66)
 
     [
         {
-            id: "96",
+            id: "66",
             "quote": "A man's flesh is his own; the water belongs to the tribe.",
         }
     ]
@@ -103,11 +103,11 @@ Returns an array with `{number}` books e.g. `GET /books/3`.
         }
     ]
 
-### `GET /book/{id}`
+### `GET /books/id/{id}`
 
 Get the corresponding book from its `id` in this format:
 
-> [https://the-dune-api.herokuapp.com/book/1](https://the-dune-api.herokuapp.com/book/1)
+> [https://the-dune-api.herokuapp.com/books/id/1](https://the-dune-api.herokuapp.com/books/id/1)
 
     [
         {
