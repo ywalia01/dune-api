@@ -83,8 +83,8 @@ function getRandom(type, number) {
     
 function getArticle(type, id) {
     if (type == 'quotes') {
-        if (id < 0) {
-            return quotes[1]
+        if (id <= 0) {
+            return quotes[0]
         }
         else if (id > quotes.length) {
             return quotes[quotes.length - 1]
@@ -94,8 +94,8 @@ function getArticle(type, id) {
         }
     }
     else if (type == 'books') {
-        if (id < 0) {
-            return books[1]
+        if (id <= 0) {
+            return books[0]
         }
         else if (id > books.length) {
             return books[books.length - 1]
@@ -105,8 +105,8 @@ function getArticle(type, id) {
         }
     }
     else if (type == 'movies') {
-        if (id < 0) {
-            return movies[1]
+        if (id <= 0) {
+            return movies[0]
         }
         else if (id > movies.length) {
             return movies[movies.length - 1]
@@ -116,8 +116,8 @@ function getArticle(type, id) {
         }
     }
     else if (type == 'series') {
-        if (id < 0) {
-            return series[1]
+        if (id <= 0) {
+            return series[0]
         }
         else if (id > series.length) {
             return series[series.length - 1]
@@ -127,8 +127,8 @@ function getArticle(type, id) {
         }
     }
     else if (type == 'stories') {
-        if (id < 0) {
-            return shortStories[1]
+        if (id <= 0) {
+            return shortStories[0]
         }
         else if (id > stories.length) {
             return shortStories[shortStories.length - 1]
@@ -138,8 +138,8 @@ function getArticle(type, id) {
         }
     }
     else if (type == 'comics') {
-        if (id < 0) {
-            return comics[1]
+        if (id <= 0) {
+            return comics[0]
         }
         else if (id > comics.length) {
             return comics[comics.length - 1]
